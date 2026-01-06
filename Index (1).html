@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Farewell Invitation</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: white;
+}
+
+/* Welcome Screen */
+#welcome {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#welcome h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+#welcome p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+button {
+    margin-top: 25px;
+    padding: 14px 28px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    background: #ffd700;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Main Content */
+#content {
+    display: none;
+    padding: 25px;
+    text-align: center;
+}
+
+.card {
+    background: rgba(255,255,255,0.12);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+video {
+    width: 100%;
+    border-radius: 12px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Welcome Screen -->
+<div id="welcome">
+    <h1>🎓 Farewell 2026</h1>
+    <p>A small surprise from your juniors 💙</p>
+    <button onclick="openFarewell()">Open Farewell</button>
+</div>
+
+<!-- Main Farewell Content -->
+<div id="content">
+    <div class="card">
+        <h2>Dear Seniors ❤️</h2>
+        <p>
+            You were not just our seniors, but our inspiration and strength.
+            Your guidance, memories, and smiles will always stay with us.
+            Wishing you success and happiness in every step of life 🌟
+        </p>
+    </div>
+
+    <!-- Event Details Added -->
+    <div class="card">
+        <h3>📅 Event Details</h3>
+        <p>
+            <b>Date:</b> 10th January 2026<br>
+            <b>Time:</b> 9:00 AM onwards<br>
+            <b>Venue:</b> School Auditorium
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>🎥 A Special Video For You</h3>
+        <video controls playsinline>
+            <source src="https://files.catbox.moe/52stdq.mp4" type="video/mp4">
+            Your browser does not support the video.
+        </video>
+    </div>
+
+    <p style="opacity:0.8;font-size:14px;">
+        Made with ❤️ by your Juniors
+    </p>
+</div>
+
+<script>
+function openFarewell() {
+    document.getElementById("welcome").style.display = "none";
+    document.getElementById("content").style.display = "block";
+}
+</script>
+
+</body>
+</html>
