@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Farewell Invitation</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: white;
+}
+
+/* Welcome Screen */
+#welcome {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#welcome h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+#welcome p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+button {
+    margin-top: 25px;
+    padding: 14px 28px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    background: #ffd700;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Main Content */
+#content {
+    display: none;
+    padding: 25px;
+    text-align: center;
+}
+
+.card {
+    background: rgba(255,255,255,0.12);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+video {
+    width: 100%;
+    border-radius: 12px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Welcome Screen -->
+<div id="welcome">
+    <h1>🎓 Farewell 2026</h1>
+    <p>A small surprise from your juniors 💙</p>
+    <button onclick="openFarewell()">Open Farewell</button>
+</div>
+
+<!-- Main Farewell Content -->
+<div id="content">
+    <div class="card">
+        <h2>Dear Seniors ❤️</h2>
+        <p>
+            You were not just our seniors, but our inspiration and strength.
+            Your guidance, memories, and smiles will always stay with us.
+            Wishing you success and happiness in every step of life 🌟
+        </p>
+    </div>
+
+    <!-- Event Details Added -->
+    <div class="card">
+        <h3>📅 Event Details</h3>
+        <p>
+            <b>Date:</b> 10th January 2026<br>
+            <b>Time:</b> 9:00 AM onwards<br>
+            <b>Venue:</b> School Auditorium
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>🎥 A Special Video For You</h3>
+        <video controls playsinline>
+            <source src="https://files.catbox.moe/r2uwd6.mp4" type="video/mp4">
+            Your browser does not support the video.
+        </video>
+    </div>
+
+    <p style="opacity:0.8;font-size:14px;">
+        Made with ❤️ by your Juniors
+    </p>
+</div>
+
+<script>
+function openFarewell() {
+    document.getElementById("welcome").style.display = "none";
+    document.getElementById("content").style.display = "block";
+}
+</script>
+
+</body>
+</html>or:#444;
+  line-height:1.6;
+  margin-bottom:15px
+}
+.footer{
+  font-size:14px;
+  color:#777;
+  margin-top:10px
+}
+.sorry-text{
+  display:none;
+  font-size:14px;
+  color:#444;
+  margin-top:10px
+}
+.final-line{
+  margin-top:18px;
+  font-family:'Dancing Script',cursive;
+  font-size:26px;
+  color:#ff4d6d;
+  opacity:0;
+  animation:fadeFinal 3s ease forwards;
+  animation-delay:8s
+}
+
+@keyframes beat{
+  0%,100%{transform:scale(1)}
+  50%{transform:scale(1.2)}
+}
+@keyframes fadeIn{
+  from{opacity:0;transform:translateY(20px)}
+  to{opacity:1;transform:translateY(0)}
+}
+@keyframes fadePhoto{
+  from{opacity:0;transform:scale(.9)}
+  to{opacity:1;transform:scale(1)}
+}
+@keyframes fadeFinal{
+  from{opacity:0;transform:translateY(10px)}
+  to{opacity:1;transform:translateY(0)}
+}
+@keyframes floatIn{
+  from{opacity:0;transform:translateY(40px) scale(.95)}
+  to{opacity:1;transform:translateY(0) scale(1)}
+}
+</style>
+</head>
+
+<body>
+
+<!-- FRONT PAGE -->
+<div class="front-page" id="frontPage">
+  <div class="front-card">
+    <div class="front-heart">❤</div>
+    <h1>For You</h1>
+    <p class="poem">
+      Ten months, a thousand moments,<br>
+      quiet smiles and loud dreams.<br>
+      In this little letter lives my heart,<br>
+      written softly… just for you.
+    </p>
+    <button onclick="openCard()">Open My Letter ✉️</button>
+  </div>
+</div>
+
+<!-- MAIN CARD -->
+<div class="card" id="mainCard">
+  <h1>Happy 10 Months</h1>
+  <h2>Our little journey together ❤️</h2>
+  <div class="heart">💖</div>
+
+  <div class="photos" id="photos">
+    <img src="https://files.catbox.moe/18qgr3.webp">
+    <img src="https://files.catbox.moe/brdxvg.jpg">
+    <img src="https://files.catbox.moe/1e39rj.jpg">
+    <img src="https://files.catbox.moe/m9lo7s.jpg">
+    <img src="https://files.catbox.moe/jyfudv.jpg">
+    <img src="https://files.catbox.moe/jhaxz9.jpg">
+  </div>
+
+  <p>
+    These 10 months have been full of smiles, memories, and moments I’ll always keep close.
+  </p>
+
+  <p>
+    Today we complete 10 months together, and it makes me really happy. In these months, we have shared smiles, small fights, and many beautiful moments. You make my days better just by being there. I’m thankful for your care, your support, and the love you give me. Being with you feels special, and I’m grateful to have you in my life. I hope we make many more memories together 💙✨
+  </p>
+
+  <button onclick="showSurprise()">Tap for a surprise 🎁</button>
+  <button onclick="showSorry()">Sorry 😔</button>
+
+  <div class="footer" id="msg"></div>
+  <div class="sorry-text" id="sorryMsg">
+    I'm sorry,I again lost your white hair band 😭😭<br>
+    It was on my side bag pocket but now it's not there
+  </div>
+
+  <div class="final-line">I choose you, always 🤍</div>
+
+  <audio id="bgMusic" src="https://files.catbox.moe/g6fs6y.mp3" preload="auto"></audio>
+</div>
+
+<script>
+let musicStarted = false;
+
+function openCard(){
+  document.getElementById('frontPage').style.display = 'none';
+  document.getElementById('mainCard').style.display = 'block';
+
+  const music = document.getElementById('bgMusic');
+  if(!musicStarted){
+    music.volume = 0.35;
+    music.play().catch(()=>{});
+    musicStarted = true;
+  }
+}
+
+function showSurprise(){
+  document.getElementById('msg').innerText =
+    "You mean a lot to me 🤍 Happy 10th month anniversary!";
+  document.getElementById('photos').style.display = 'flex';
+}
+
+function showSorry(){
+  document.getElementById('sorryMsg').style.display = 'block';
+}
+</script>
+
+</body>
+</html>
